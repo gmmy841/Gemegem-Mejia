@@ -138,7 +138,7 @@ section {
 
 .main-container .image {
     width: 500px;
-    height: 65vh;
+    height: 62vh;
     border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 50px #ff69b4;
@@ -285,3 +285,80 @@ section {
 .item:hover img {
   transform: scale(1.05); /* Zoom effect on the image */
 }
+@media (max-width:884px) {
+    nav .logo{
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container .links{
+        display: none;
+    }
+
+    .hamburg,
+    .cancel{
+        display: block;
+    }
+
+    .main-container .content{
+        width: 80%;
+    }
+
+    .social-links i{
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .main-container .image{
+        width: 50vh;
+    height: 65vh;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 50px #ff69b4;
+    }
+}
+
+@media (max-width:440px){
+    .main-container .image{
+        width: 25vh;
+    height: 30vh;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 50px #ff69b4;
+    }
+
+    .main-container .content{
+        width: 80%;
+    }
+
+    .main-container button{
+        margin-top: 15px;
+    }
+    #about, #contact {
+        text-align: center; /* Center the text horizontally */
+        margin: 0 auto; /* Center the section within its parent */
+        padding: 50px 20px; /* Add spacing for better appearance */
+    }
+    
+    #about h2, #contact h2 {
+        font-size: 2rem; /* Adjust title size */
+        margin-bottom: 20px; /* Add spacing below the heading */
+    }
+    
+    #about p, #contact p {
+        font-size: 1.2rem; /* Adjust paragraph size */
+        line-height: 1.5; /* Improve readability */
+        margin: 0 auto; /* Center the paragraph text */
+        max-width: 800px; /* Limit the width for better formatting */
+    }
+}
+
+
